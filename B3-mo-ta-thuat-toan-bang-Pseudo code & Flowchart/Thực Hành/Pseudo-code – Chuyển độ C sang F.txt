@@ -1,0 +1,8 @@
+//Pseudo-code – Chuyển độ C sang F
+BEGIN
+      INPUT C
+      
+      F = (9*C)/5 + 32
+
+      DISPLAY F
+END
