@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<input type="text" id="number1">
+<input type="text" id="number2"><br>
+<button type="button" onclick="Adn()">Addition(+)</button>
+<button type="button" onclick="Stn()">Subtraction(-)</button>
+<button type="button" onclick="Mtn()">Multiplication(X)</button>
+<button type="button" onclick="Dvn()">Division(/)</button><br>
+<h4>Result</h4>
+<h4 id="total">0</h4>
+<script>
+    function Adn(){
+        let inputNumber1, inputNumber2;
+        inputNumber1 = document.getElementById("number1").value;
+        inputNumber2 = document.getElementById("number2").value;
+        let number1 = parseInt(inputNumber1);
+        let number2 = parseInt(inputNumber2);
+        let result = number1 + number2;
+        document.getElementById("total").innerText = result;
+    }
+    function Stn(){
+        let inputNumber1, inputNumber2;
+        inputNumber1 = document.getElementById("number1").value;
+        inputNumber2 = document.getElementById("number2").value;
+        let number1 = parseInt(inputNumber1);
+        let number2 = parseInt(inputNumber2);
+        let result = number1 - number2;
+        document.getElementById("total").innerText = result;
+    }
+    function Mtn(){
+        let inputNumber1, inputNumber2;
+        inputNumber1 = document.getElementById("number1").value;
+        inputNumber2 = document.getElementById("number2").value;
+        let number1 = parseInt(inputNumber1);
+        let number2 = parseInt(inputNumber2);
+        let result = number1 * number2;
+        document.getElementById("total").innerText = result;
+    }
+    function Dvn(){
+        let inputNumber1, inputNumber2;
+        inputNumber1 = document.getElementById("number1").value;
+        inputNumber2 = document.getElementById("number2").value;
+        let number1 = parseInt(inputNumber1);
+        let number2 = parseInt(inputNumber2);
+        let result = number1 / number2;
+        document.getElementById("total").innerText = result;
+    }
+
+</script>
+</body>
+</html>
