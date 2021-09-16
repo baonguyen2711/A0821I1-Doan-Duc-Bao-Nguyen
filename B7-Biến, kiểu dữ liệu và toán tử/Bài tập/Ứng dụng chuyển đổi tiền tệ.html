@@ -5,21 +5,26 @@
     <title>Ứng dụng chuyển đổi tiền tệ</title>
 </head>
 <body>
-<h2>Amount</h2>
-<input type="text" placeholder="Nhập số tiền" id="amount">
-<h2>From Currency</h2>
-<select id="FromCurrency">
-    <option value="VietNam">VietNam</option>
-    <option value="USD">USD</option>
-    <option value="Japan">Japan</option>
-</select>
-<h2>To Curremcy</h2>
-<select id="ToCurrency">
-    <option value="Japan">Japan</option>
-    <option value="USD">USD</option>
-    <option value="VietNam">VietNam</option>
-</select><br><br>
-<button type="button" onclick="btn()">Convert</button>
+<form>
+    <label for="amount" style="font-weight: bold;font-size: 30px">Amount</label><br>
+    <input type="text" placeholder="Nhập số tiền" id="amount">
+    <input type="reset">
+    <h2>From Currency</h2>
+    <label for="FromCurrency"></label>
+    <select id="FromCurrency">
+        <option value="VietNam">VietNam</option>
+        <option value="USD">USD</option>
+        <option value="Japan">Japan</option>
+    </select>
+    <h2>To Curremcy</h2>
+    <label for="ToCurrency"></label>
+    <select id="ToCurrency">
+        <option value="Japan">Japan</option>
+        <option value="USD">USD</option>
+        <option value="VietNam">VietNam</option>
+    </select><br><br>
+    <button type="button" onclick="btn()">Convert</button>
+</form>
 <script>
     function btn() {
         let inputAmount, inputFromCurrency, inputToCurrency, result, convert;

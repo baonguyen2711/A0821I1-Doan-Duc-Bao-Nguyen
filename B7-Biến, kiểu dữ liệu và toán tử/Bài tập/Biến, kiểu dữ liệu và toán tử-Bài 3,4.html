@@ -13,24 +13,26 @@
 </head>
 <body>
 <div>
-    <h4>Bán kính</h4>
-    <input type="text" placeholder="Nhập số" id="num">
-    <button type="button" onclick="result()">Kết quả</button>
+    <form>
+        <label for="num" style="font-weight: bold">Bán kính</label><br>
+        <input type="text" placeholder="Nhập số" id="num">
+        <button type="button" onclick="result()">Kết quả</button><input type="reset" value="Đặt lại">
     <h4>Diện tích</h4>
     <h4 id="dientich">0</h4>
     <h4>Chu vi</h4>
     <h4 id="chuvi">0</h4>
+    </form>
 </div>
 <script>
     function result() {
         let inputR
         inputR = document.getElementById("num").value;
-        let R = parseInt(inputR)
-        let S = R * R * 3.14
-        let C = R * 2 * 3.14
-        document.getElementById("dientich").innerText = S
-        document.getElementById("chuvi").innerText = C
-        }
+        let R = parseInt(inputR);
+        let S = R * R * 3.14;
+        let C = R * 2 * 3.14;
+        document.getElementById("dientich").innerText = S;
+        document.getElementById("chuvi").innerText = C;
+    }
 </script>
 
 </body>
