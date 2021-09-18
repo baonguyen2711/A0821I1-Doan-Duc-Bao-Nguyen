@@ -17,7 +17,7 @@
         let weight = document.getElementById("kilogram").value;
         weight = parseInt(weight);
         let height = document.getElementById("meters").value;
-        height = parseInt(height);
+        height = parseInt(height/100);
         let bmi= weight / (height ^ 2);
         document.getElementById("result").innerText = bmi;
         if (bmi < 18) {
