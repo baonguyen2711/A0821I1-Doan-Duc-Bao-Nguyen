@@ -1,0 +1,5 @@
+BEGIN
+     INPUT math, physics, cheistry
+     AVERAGE = (math + physics + cheistry) /3
+     DISPLAY AVERAGE
+END

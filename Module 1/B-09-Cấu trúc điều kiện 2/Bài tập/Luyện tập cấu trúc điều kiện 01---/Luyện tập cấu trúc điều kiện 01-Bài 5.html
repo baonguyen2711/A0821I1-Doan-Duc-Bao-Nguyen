@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 01-Bài 5</title>
+</head>
+<body>
+<script>
+    let test = parseInt(prompt("Nhập điểm bài kiểm tra : "));
+    let mid = parseInt(prompt("Nhập điểm bài thi giữa kỳ : "));
+    let final = parseInt(prompt("Nhập điểm bài thi cuối kỳ : "));
+    let total;
+    total = (test + mid + final) / 3;
+    if (total > 9) {
+        alert("Bạn được tổng điểm là " + total + " xếp loại Excellent !!!");
+    } else if (total >= 8) {
+        alert("Bạn được tổng điểm là " + total + " xếp loại Very good !!!");
+    } else if (total >= 7) {
+        alert("Bạn được tổng điểm là " + total + " xếp loại Good !!!");
+    } else if (total >= 5) {
+        alert("Bạn được tổng điểm là " + total + " xếp loại Average !!!");
+    } else {
+        alert("Bạn được tổng điểm là " + total + " xếp loại Weak !!!");
+    }
+</script>
+
+</body>
+</html>
