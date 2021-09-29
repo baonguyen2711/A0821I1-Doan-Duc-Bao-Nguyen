@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 02-Bài 2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số lượng kí tự !!!"));
+    let arr = Array(a);
+    // let x = 0;
+    // let y = arr.length - 1;
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = prompt("[Kí tự][" + (i + 1) + "]= ");
+    }
+    document.write("Dãy kí tự vừa nhập : " + arr + "<br>");
+    // while (x < y) {
+    //     let b = arr[x];
+    //     arr[x] = arr[y];
+    //     arr[y] = b;
+    //     x++;
+    //     y--;
+    // }
+    document.write("Dãy kí tự đảo ngược : " + arr.reverse());
+</script>
+</body>
+</html>
