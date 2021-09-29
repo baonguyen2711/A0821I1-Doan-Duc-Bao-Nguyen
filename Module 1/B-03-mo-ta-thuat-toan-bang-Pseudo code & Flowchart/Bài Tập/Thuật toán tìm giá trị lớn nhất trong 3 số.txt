@@ -1,0 +1,17 @@
+BEGIN
+     INPUT A B C
+
+     IF MAX = A
+
+            DISPLAY MAX
+
+     ELSE IF ( B > MAX )
+
+            DISPLAY "MAX = B"
+
+     ELSE IF ( C > MAX )
+
+            DISPLAY "MAX = C"
+
+     END IF
+END

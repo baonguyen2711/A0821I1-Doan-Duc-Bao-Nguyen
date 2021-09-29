@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseStudy-Yêu cầu 2-Bài 1</title>
+    <style>
+        .a {
+            padding-left: 100px;
+            border: 1px solid;
+            height: 200px;
+            background-color: lavender;
+            width: 50%;
+            padding-top: 50px;
+        }
+        .b {
+            padding-left: 325px;
+            width: 30%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="b">
+    <h3>Lương nhân viên</h3>
+</div>
+<div class="a">
+<form>
+    <label for="money" style="font-weight: bold">Lương nhận được :</label>
+    <input type="text" placeholder="Nhập số tiền" id="money">
+    <button type="button" onclick="result()">Tính Toán</button>
+    <button type="reset" onclick="set()">Nhập Lại</button>
+    <h3 id="salary">Lương trước thuế :</h3>
+    <h3 id="tax">Tiền Thuế :</h3>
+    <h3 id="total">Lương sau thuế :</h3>
+    <script>
+        function result() {
+            let inputMoney = document.getElementById("money").value;
+            let money = parseInt(inputMoney);
+            document.getElementById("salary").innerText = "Lương trước thuế : " + money + ' million';
+            if (money >= 15) {
+               document.getElementById("tax").innerText = "Tiền Thuế : " + (money * 20) / 100 + " million";
+               document.getElementById("total").innerText = "Lương sau thuế : " + (money - (money * 20) / 100) + " million";
+            } else if (money >= 7) {
+                document.getElementById("tax").innerText = "Tiền Thuế : " + (money * 10) / 100 + " million";
+                document.getElementById("total").innerText = "Lương sau thuế : " + (money - (money * 10) / 100) + " million";
+            } else {
+                document.getElementById("tax").innerText = "Tiền Thuế : " + (money * 5) / 100 + " million";
+                document.getElementById("total").innerText = "Lương sau thuế : " + (money - (money * 5) / 100) + " million";
+            }
+        }
+        function set() {
+            document.getElementById("salary").innerText = "Lương trước thuế : ";
+            document.getElementById("tax").innerText = "Tiền Thuế : ";
+            document.getElementById("total").innerText = "Lương sau thuế : ";
+        }
+    </script>
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 01-Bài 2</title>
+</head>
+<body>
+<script>
+    let value = [];
+    let max = []
+    let maxIndex = 0
+    for (let i = 0; i < 10; i++) {
+        value[i] = parseInt(prompt("Nhập số : [" + (i + 1) + "]= "));
+        if (value[i] > max) {
+            max = value[i];
+            maxIndex = i
+        }
+    }
+    document.write("Dãy số vừa nhập : " + value + "<br>");
+    document.write("Số lớn nhất là : " + max + "<br>");
+    document.write("Vị trí của số lớn nhất là : " + maxIndex);
+</script>
+</body>
+</html>

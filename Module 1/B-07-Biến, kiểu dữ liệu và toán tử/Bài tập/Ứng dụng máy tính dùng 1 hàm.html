@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính dùng 1 hàm</title>
+</head>
+<body>
+<input type="text" id="number1">
+<input type="text" id="number2"><br>
+<button type="button" onclick="getResult('addi')">Addition(+)</button>
+<button type="button" onclick="getResult('subt')">Subtraction(-)</button>
+<button type="button" onclick="getResult('mul')">Multiplication(X)</button>
+<button type="button" onclick="getResult('div')">Division(/)</button>
+<br>
+<h4>Result</h4>
+<h4 id="total">0</h4>
+<script>
+    function getResult(cal) {
+        let inputNumber1, inputNumber2;
+        inputNumber1 = document.getElementById("number1").value;
+        inputNumber2 = document.getElementById("number2").value;
+        let number1 = parseInt(inputNumber1);
+        let number2 = parseInt(inputNumber2);
+        let result
+
+        if (cal === "addi")
+            result = number1 + number2;
+        else if (cal === "subt")
+            result = number1 - number2;
+        else if (cal === "mul")
+            result = number1 * number2;
+        else (result = number1/number2)
+
+        document.getElementById("total").innerText = result;
+    }
+</script>
+</body>
+</html>
