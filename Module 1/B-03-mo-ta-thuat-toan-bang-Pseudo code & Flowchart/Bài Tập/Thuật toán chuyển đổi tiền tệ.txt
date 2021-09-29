@@ -1,5 +1,0 @@
-BEGIN
-     INPUT $1
-     Viet nam dong = $1 * 23000
-     DISPLAY "Viet nam dong"
-END
