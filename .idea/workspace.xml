@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee920bac-7f35-4a15-8fb0-7eebd712e524" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/B-13-Mảng 2/Bài tập/Luyện tập mảng 02/Luyện tập mảng 02-Bài 5.html" beforeDir="false" afterPath="$PROJECT_DIR$/B-13-Mảng 2/Bài tập/Luyện tập mảng 02/Luyện tập mảng 02-Bài 5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B-13-Mảng 2/Bài tập/Luyện tập mảng 02/Luyện tập mảng 02-Bài 6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B-14-Hàm 1/Thực hành/Chuyển đổi nhiệt độ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B-14-Hàm 1/Thực hành/Tìm giá trị nhỏ nhất của mảng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B-14-Hàm 1/Thực hành/Tạo và gọi hàm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B-13-Mảng 2/Bài tập/Luyện tập mảng 02/Luyện tập mảng 02-Bài 3.html" beforeDir="false" afterPath="$PROJECT_DIR$/B-13-Mảng 2/Bài tập/Luyện tập mảng 02/Luyện tập mảng 02-Bài 3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,6 +74,10 @@
       <workItem from="1632831896653" duration="6063000" />
       <workItem from="1632901026789" duration="7501000" />
       <workItem from="1632909125852" duration="237000" />
+      <workItem from="1632911819230" duration="10782000" />
+      <workItem from="1633090640074" duration="1074000" />
+      <workItem from="1633101413229" duration="2124000" />
+      <workItem from="1633138547096" duration="4418000" />
     </task>
     <servers />
   </component>
