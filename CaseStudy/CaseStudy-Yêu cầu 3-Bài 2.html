@@ -20,22 +20,14 @@
     for (let i = 0; i < arrB.length; i++) {
         arrB[i] = parseInt(prompt("arrB[" + (i + 1) + "]= "));
         check[arrA[i]] = true;
-        function compare(x, y) {
-            return x - y;
-        }
-        arrA.sort(compare);
-        arrB.sort(compare);
-        miss.sort(compare);
         if (check[arrB[i]] !== true && arrB[i] !== arrB[i + 1]) {
             miss[count] = arrB[i];
             count++;
         }
     }
-
-
-    document.write("Mảng A là : " + arrA + "<br>");
-    document.write("Mảng B là : " + arrB + "<br>");
-    document.write("missingValue(A, B) : " + miss);
+    document.write("Mảng A là : " + arrA.sort() + "<br>");
+    document.write("Mảng B là : " + arrB.sort() + "<br>");
+    document.write("missingValue(A, B) : " + miss.sort());
 </script>
 </body>
 </html>
