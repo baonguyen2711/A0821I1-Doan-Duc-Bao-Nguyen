@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 02-Bài 5</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhập số lượng phần tử !!!"));
+    let arr = Array(num);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("Số [" + (i + 1) + "]= "));
+    }
+    document.write("Dãy số vừa nhập : " + arr + "<br>");
+
+    function minArray() {
+        let minArr = arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < minArr) {
+                minArr = arr[i]
+            }
+        }
+        return minArr
+    }
+
+    document.write("Số nhỏ nhất là : " + minArray(num));
+</script>
+</body>
+</html>

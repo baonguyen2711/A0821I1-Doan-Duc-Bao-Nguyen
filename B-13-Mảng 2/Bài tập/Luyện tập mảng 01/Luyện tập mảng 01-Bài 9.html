@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 01-Bài 9</title>
+</head>
+<body>
+<script>
+    let num1, num2;
+    do {
+        num1 = parseInt(prompt("Nhập sô cho dãy a !!!"));
+        num2 = parseInt(prompt("Nhập sô cho dãy b !!!"));
+    } while (num1 > 10 || num2 > 10)
+    let arr1 = Array(num1);
+    let arr2 = Array(num2);
+
+    for (let i =0;i <arr1.length;i++) {
+        arr1[i] =parseInt(prompt("Số [a][" + (i+1) + "]= "))
+    }
+    for (let i =0;i <arr2.length;i++) {
+        arr2[i] =parseInt(prompt("Số [b][" + (i+1) + "]= "))
+    }
+    document.write("Dãy số a vừa nhập : " + arr1 + "<br>" + "Dãy số b vừa nhập : " + arr2 + "<br>");
+    document.write("Kết hợp 2 dãy số : " + arr1.concat(arr2));
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 01-Bài 5</title>
+</head>
+<body>
+<script>
+    let a = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let b = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+    let str = prompt("Nhập tên !!!");
+    let check = false
+
+    function  convert(str) {
+        for (let i = 0; i < str.length;i++) {
+            if(str === a[i]) {
+                alert("Ngôi sao " + a[i] + " là " + "Chòm sao " + b[i]);
+                return  true;
+            }
+        }
+        if ( check === false)
+        alert("Không tìm thấy !!!")
+        return false
+    }
+    convert(str)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 02-Bài 3</title>
+</head>
+<body>
+<script>
+    let value = parseInt(prompt("Nhập số !!!"));
+    let result = 1;
+    document.write("Số vừa nhập : " + value + "<br>");
+
+    function factorial() {
+        for (let i = 1; i <= value; i++) {
+            result *= i;
+        }
+        return result
+    }
+
+    result = factorial(value);
+    document.write("Giai thừa của " + value + " là : " + result)
+</script>
+</body>
+</html>

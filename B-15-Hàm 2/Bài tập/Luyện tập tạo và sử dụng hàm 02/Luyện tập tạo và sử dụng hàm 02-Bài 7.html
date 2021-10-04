@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 02-Bài 7</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số nguyên a"));
+    let b = parseInt(prompt("Nhập số nguyên b"));
+    document.write("Số nguyên a và b vừa nhập là : " + a + "," + b + "<br>");
+
+    function swap() {
+        let c = a;
+        a = b;
+        b = c;
+    }
+
+    swap()
+    document.write("Số nguyên a và b sau khi hoán đổi : " + a + " " + b);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập vòng lặp 02-Bài 5</title>
+</head>
+<body>
+<script>
+    let value = parseInt(prompt("Nhập số tiền !!!"));
+    let a = parseInt(prompt("Nhập số tháng !!!"));
+    let count = 0
+    let result = 0
+    let total = 0
+    for (let i = 0; i < value; i++) {
+        result = ((value * 10) / 100)/12;
+        count = a * result;
+        total = value + count;
+
+    }
+    document.write("Số tiền : " + value + "<br>");
+    document.write("Tiền lãi 1 tháng : " + result + "<br>");
+    document.write("Tiền lãi " + a + " tháng : " + count + "<br>");
+    document.write("Tổng số tiền cần phải thanh toán : " + total);
+</script>
+</body>
+</html>
