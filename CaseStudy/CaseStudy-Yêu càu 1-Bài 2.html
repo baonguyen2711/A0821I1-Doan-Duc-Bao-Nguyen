@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseStudy-Yêu càu 1-Bài 2</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt("Nhập chiều cao của tam giác"));
+    for (let i = 0; i <= height; i++) {
+        for (let j = 0; j <= i; j++) {
+            if (i === height || j === 0 || j === i) {
+                document.write('*');
+            } else {
+                document.write('&nbsp&nbsp');
+            }
+        }
+    document.write('<br>');
+    }
+</script>
+</body>
+</html>

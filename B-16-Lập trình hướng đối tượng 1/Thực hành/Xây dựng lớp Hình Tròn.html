@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+<script>
+    class Circle {
+        radius;
+
+        constructor(radius, area) {
+            this.radius = radius;
+            this.area = area;
+        }
+
+        getradius() {
+            return this.radius;
+        }
+
+        getarea() {
+            return this.area = Math.PI * this.radius * this.radius;
+        }
+    }
+
+    let circle = new Circle(2, 2);
+    document.write("Chu vi của hình tròn : " + circle.getradius() + "<br>");
+    document.write("Diện tích của hình tròn : " + circle.getarea() + "<br>");
+</script>
+</body>
+</html>

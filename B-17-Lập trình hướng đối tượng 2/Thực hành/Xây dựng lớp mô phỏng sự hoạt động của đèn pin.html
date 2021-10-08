@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô phỏng sự hoạt động của đèn pin</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor(battery) {
+            this.battery = battery;
+        }
+
+        getbattery() {
+            return this.battery;
+        }
+
+        useBattery() {
+            if ( this.battery === 0) {
+                document.write(" vì hết pin");
+                return;
+
+            }
+            this.battery--;
+        }
+    }
+
+    class Lamp {
+        constructor(battery) {
+            this.battery = battery;
+        }
+
+        light() {
+            if (battery.battery < 1) {
+                document.write("Đèn đã tắt");
+                return this.battery
+            } else {
+                document.write("Ðèn đang sáng")
+            }
+        }
+    }
+    let battery = new Battery(5);
+    let lamp = new Lamp();
+    document.write("Pin : " + battery.getbattery() + " ");
+
+    lamp.light();
+    battery.useBattery();
+    document.write("<br>");
+    document.write("Pin : " + battery.getbattery() + " ");
+    lamp.light();
+    battery.useBattery();
+    document.write("<br>");
+    document.write("Pin : " + battery.getbattery() + " ");
+    lamp.light();
+    battery.useBattery();
+    document.write("<br>");
+    document.write("Pin : " + battery.getbattery() + " ");
+    lamp.light();
+    battery.useBattery();
+    document.write("<br>");
+    document.write("Pin : " + battery.getbattery() + " ");
+    lamp.light();
+    battery.useBattery();
+    document.write("<br>");
+    document.write("Pin : " + battery.getbattery() + " ");
+    lamp.light();
+    battery.useBattery();
+    document.write("<br>");
+    document.write("Pin : " + battery.getbattery() + " ");
+    lamp.light();
+    battery.useBattery();
+</script>
+</body>
+</html>

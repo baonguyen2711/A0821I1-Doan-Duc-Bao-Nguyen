@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+
+            this.weight = weight;
+        }
+
+        getweight() {
+            return this.weight;
+        }
+
+        eaten() {
+            if (this.weight === 0) {
+                document.write("<h3>" + "Táo đã hết !!!");
+                return
+            }
+            document.write("Cân nặng quả táo sau khi bị ăn : " + --this.weight + "kg" + "<br>");
+        }
+
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        say(text) {
+            document.write(text)
+        }
+
+        eatApple() {
+            if (apple.weight <= 0) {
+                document.write("");
+                return
+            }
+            document.write("Cân nặng sau khi ăn táo : " + ++this.weight + "<br>");
+        }
+
+        getname() {
+            return this.name;
+        }
+
+
+        getgender() {
+            if (this.gender === true) {
+                return this.gender = "Male"
+            } else {
+                return this.gender = "Female"
+            }
+        }
+
+        getweight() {
+            return this.weight;
+        }
+    }
+    let adam = new Human("Adam", true, 80);
+    let eva = new Human("Eva", false, 50);
+    let apple = new Apple(10);
+    document.write("Khối lượng quả táo : " + apple.getweight() + "kg" + "<br>");
+    document.write("<hr>")
+    document.write("Tên : " + adam.getname() + "<br>");
+    document.write("Giới tính : " + adam.getgender() + "<br> ");
+    document.write("Cân nặng : " + adam.getweight() + "kg" + "<br>");
+    adam.eatApple();
+    apple.eaten();
+    adam.eatApple();
+    apple.eaten();
+    adam.eatApple();
+    apple.eaten();
+    adam.eatApple();
+    apple.eaten();
+    adam.say("<h3>"+ adam.getname() + " : Ăn đi em yêu " + eva.getname()+ "</h3>");
+    adam.say("<h3>"+ adam.getname() + " : Anh mập như con heo rồi " + eva.getname()+ "</h3>");
+
+    document.write("<hr>")
+
+    document.write("Tên : " + eva.getname() + "<br>");
+    document.write("Giới tính : " + eva.getgender() + "<br> ");
+    document.write("Cân nặng : " + eva.getweight() + "kg" + "<br>");
+    eva.say("<h3>" + eva.getname() + " : Cám ơn anh yêu " + adam.getname() + "<br>" + "</h3>");
+    eva.say("<h3>" + eva.getname() + " : Đồ con heo ngốk " + adam.getname() + "<br>" + "</h3>");
+    eva.eatApple();
+    apple.eaten();
+    eva.eatApple();
+    apple.eaten();
+    eva.eatApple();
+    apple.eaten();
+    eva.eatApple();
+    apple.eaten();
+    eva.eatApple();
+    apple.eaten();
+    eva.eatApple();
+    apple.eaten();
+    eva.eatApple();
+    apple.eaten();
+
+</script>
+</body>
+</html>
