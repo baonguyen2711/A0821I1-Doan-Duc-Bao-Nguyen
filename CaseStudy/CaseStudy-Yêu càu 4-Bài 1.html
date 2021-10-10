@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseStudy-Yêu càu 4-Bài 1</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập kí tự tại đây !!!");
+    let b = a.replace(/\s+/g, " ");
+
+    function titleCase(b) {
+        return b.toLowerCase().replace(/(^|\s)\S/g, function (C) {
+            return C.toUpperCase();
+        }
+        );
+    }
+
+    function length(b) {
+        let c = b.split(" ");
+        let count = 0
+        let word = " "
+        for (let i = 0; i < c.length; i++) {
+            if (c[i].length > count) {
+                count = c[i].length;
+                word = c[i]
+            }
+        }
+        return value = "\nTừ dài nhất là : " + word + "\nSố kí tự của từ dài nhất là : " + count
+    }
+
+    alert("Kí tự vừa nhập là : " + titleCase(b) + titleCase(length(b)));
+</script>
+</body>
+</html>

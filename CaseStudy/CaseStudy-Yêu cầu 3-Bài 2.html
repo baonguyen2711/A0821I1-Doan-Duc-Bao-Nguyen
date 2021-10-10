@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    let arr1 = parseInt(prompt("Nhập số cho mảng A : "));
-    let arr2 = parseInt(prompt("Nhập số cho mảng B : "));
+    let arr1 = parseInt(prompt("Nhập số lượng phần tử cho mảng A : "));
+    let arr2 = parseInt(prompt("Nhập số lượng phần tử cho mảng B : "));
     let arrA = Array(arr1);
     let arrB = Array(arr2);
     let miss = Array();
@@ -15,19 +15,22 @@
     let count = 0;
     for (let i = 0; i < arrA.length; i++) {
         arrA[i] = parseInt(prompt("arrA[" + (i + 1) + "]= "));
+        check[arrA[i]] = true;
     }
 
     for (let i = 0; i < arrB.length; i++) {
         arrB[i] = parseInt(prompt("arrB[" + (i + 1) + "]= "));
-        check[arrA[i]] = true;
+    }
+    arrB.sort();
+    for(let i=0; i<arrB.length;i++){
         if (check[arrB[i]] !== true && arrB[i] !== arrB[i + 1]) {
             miss[count] = arrB[i];
             count++;
         }
     }
     document.write("Mảng A là : " + arrA.sort() + "<br>");
-    document.write("Mảng B là : " + arrB.sort() + "<br>");
-    document.write("missingValue(A, B) : " + miss.sort());
+    document.write("Mảng B là : " + arrB + "<br>");
+    document.write("missingValue(A, B : " + miss);
 </script>
 </body>
 </html>

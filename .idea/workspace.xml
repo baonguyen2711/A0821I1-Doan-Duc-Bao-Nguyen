@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee920bac-7f35-4a15-8fb0-7eebd712e524" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả Temperature.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả hình chữ nhật.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả điện thoại.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Thực hành/Xây dựng lớp Date.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Thực hành/Xây dựng lớp Hình Tròn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B-17-Lập trình hướng đối tượng 2/Bài tập/Phát triển chương trình thể hiện sự tương tác giữa hai đối tượng công tắc và bóng đèn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B-17-Lập trình hướng đối tượng 2/Bài tập/Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B-17-Lập trình hướng đối tượng 2/Thực hành/Xây dựng lớp mô phỏng sự hoạt động của đèn pin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu càu 1-Bài 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu càu 1-Bài 3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu càu 1-Bài 4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu cầu 1-Bài 1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B-17-Lập trình hướng đối tượng 2/Bài tập/Ứng dụng quản lý sản phẩm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu càu 4-Bài 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu càu 4-Bài 3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_10_2021_11_51_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_10_2021_11_51__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B-11-Cấu trúc lặp 2/Bài tập/Luyện tập vòng lặp 02/Luyện tập vòng lặp 02-Bài 4.html" beforeDir="false" afterPath="$PROJECT_DIR$/B-11-Cấu trúc lặp 2/Bài tập/Luyện tập vòng lặp 02/Luyện tập vòng lặp 02-Bài 4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả hình chữ nhật.html" beforeDir="false" afterPath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả hình chữ nhật.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả điện thoại.html" beforeDir="false" afterPath="$PROJECT_DIR$/B-16-Lập trình hướng đối tượng 1/Bài tập/Xây dựng lớp mô tả điện thoại.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B-17-Lập trình hướng đối tượng 2/Thực hành/Xây dựng lớp mô phỏng sự hoạt động của đèn pin.html" beforeDir="false" afterPath="$PROJECT_DIR$/B-17-Lập trình hướng đối tượng 2/Thực hành/Xây dựng lớp mô phỏng sự hoạt động của đèn pin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu cầu 3-Bài 2.html" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudy/CaseStudy-Yêu cầu 3-Bài 2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +92,12 @@
       <workItem from="1633484063435" duration="106000" />
       <workItem from="1633598355268" duration="9213000" />
       <workItem from="1633614138593" duration="5064000" />
-      <workItem from="1633637231768" duration="12739000" />
+      <workItem from="1633637231768" duration="14585000" />
+      <workItem from="1633690642451" duration="1893000" />
+      <workItem from="1633693371373" duration="2497000" />
+      <workItem from="1633764973668" duration="8561000" />
+      <workItem from="1633774828347" duration="7790000" />
+      <workItem from="1633828131277" duration="1236000" />
     </task>
     <servers />
   </component>

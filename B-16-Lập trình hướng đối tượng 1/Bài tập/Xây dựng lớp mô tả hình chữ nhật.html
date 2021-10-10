@@ -5,7 +5,7 @@
     <title>Xây dựng lớp mô tả hình chữ nhật</title>
 </head>
 <body>
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid darkslategray;background-color: #d61b06;"></canvas><br>
+<canvas id="myCanvas" width="500" height="300" style="border:1px solid darkslategray;"></canvas><br>
 <script>
   class Rectangle {
       constructor(height, width, radius ,area) {
@@ -31,28 +31,16 @@
       getarea() {
           return this.area = this.height*this.width;
       }
-
-      setheight(value) {
-          this.height = value;
-      }
-
-      setwidth(value) {
-          this.width = value;
-      }
-
-      setradius(value) {
-          this.radius = value;
-      }
-
-      setarea(value) {
-          this.area = value;
-      }
   }
-  let rectangle = new Rectangle(100,200);
+  let rectangle = new Rectangle(200,300);
   document.write("Chiều dài hình chữ nhật là : " + rectangle.getheight() + "<br>");
   document.write("Chiều rộng hình chữ nhật là : " + rectangle.getwidth() + "<br>");
   document.write("Chu vi hình chữ nhật là : " + rectangle.getradius() + "<br>");
   document.write("Diện tích hình chữ nhật là : " +rectangle.getarea() + "<br>");
+  let c = document.getElementById("myCanvas");
+  let ctx = c.getContext("2d");
+  ctx.fillStyle='#fa4b2a';
+  ctx.fillRect(0,0,200,300);
 
 </script>
 </body>

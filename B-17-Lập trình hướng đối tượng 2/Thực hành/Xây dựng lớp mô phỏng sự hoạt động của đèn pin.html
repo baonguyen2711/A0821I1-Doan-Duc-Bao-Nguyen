@@ -33,16 +33,18 @@
         light() {
             if (battery.battery < 1) {
                 document.write("Đèn đã tắt");
-                return this.battery
+                return this.battery;
             } else {
-                document.write("Ðèn đang sáng")
+                document.write("Ðèn đang sáng");
+
             }
         }
+
     }
     let battery = new Battery(5);
     let lamp = new Lamp();
-    document.write("Pin : " + battery.getbattery() + " ");
 
+    document.write("Pin : " + battery.getbattery() + " ");
     lamp.light();
     battery.useBattery();
     document.write("<br>");
