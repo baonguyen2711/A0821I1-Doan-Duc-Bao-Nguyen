@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseStudy-Yêu càu 5-Bài 1</title>
+</head>
+<body>
+<script>
+
+    let row = parseInt(prompt("Nhập số hàng :"));
+    let col = parseInt(prompt("Nhập số cột :"));
+    let arr2d = new Array(row);
+    let element
+    document.write("Mảng là : " + "<br>")
+    for (let i = 0; i < arr2d.length; i++) {
+        arr2d[i] = new Array(col);
+        for (let j = 0; j < arr2d[i].length; j++) {
+            element = parseInt(prompt("Nhập giá trị phần tử : [" + i + "][" + j + "] :"));
+            arr2d[i][j] = element;
+            document.write(arr2d[i][j] + "  ")
+        }
+        document.write("<br>");
+    }
+    let count1 = 0;
+    let count2 = 0;
+    for (let i = 0; i < arr2d.length; i++) {
+        for (let j = 0; j < arr2d[i].length; j++) {
+            if (arr2d[i][j] % 2 === 0) {
+                count1 += arr2d[i][j];
+            } else {
+                count2 += arr2d[i][j];
+            }
+        }
+    }
+    document.write("Các số trong mảng là : " + arr2d +"<br>" + "Tổng các số chẵn trong mảng là : " + count1 + "<br>" + "Tổng các số lẻ trong mảng là : " + count2);
+
+</script>
+</body>
+</html>

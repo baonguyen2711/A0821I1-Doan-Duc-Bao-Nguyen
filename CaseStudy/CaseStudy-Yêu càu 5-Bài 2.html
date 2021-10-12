@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseStudy-Yêu càu 5-Bài 2</title>
+</head>
+<body>
+<script>
+    let row = parseInt(prompt("Nhập số hàng :"));
+    let col = parseInt(prompt("Nhập số cột :"));
+    let arr2d = Array(row);
+    document.write("Mảng là : " + "<br>")
+    for (let i = 0; i < arr2d.length; i++) {
+        arr2d[i] = Array(col);
+        for (let j = 0; j < arr2d[i].length; j++) {
+            arr2d[i][j] = parseInt(prompt("Nhập giá trị phần tử : [" + i + "][" + j + "] :"));
+            document.write(arr2d[i][j] + "  ")
+        }
+        document.write("<br>");
+    }
+
+    function check(n) {
+        if (n <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= (n / 2) ; i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function nguyenTo() {
+
+        let s = " ";
+        let d = 0;
+        for (let i = 0; i < arr2d.length; i++) {
+            for (let j = 0; j < arr2d[i].length; j++) {
+                if (check(arr2d[i][j]) === true) {
+                    s += arr2d[i][j] + " ";
+                    d++;
+                }
+            }
+        }
+
+        document.write("Các số nguyên tố trong mảng là :" + s + "<br>");
+        document.write("Số lượng :" + d);
+    }
+
+    nguyenTo();
+</script>
+</body>
+</html>

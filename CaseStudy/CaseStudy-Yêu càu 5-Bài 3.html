@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseStudy-Yêu càu 5-Bài 3</title>
+</head>
+<body>
+<script>
+    let row = parseInt(prompt("Nhập số hàng :"));
+    let col = parseInt(prompt("Nhập số cột :"));
+    let arr2d = Array(row);
+    let element
+    document.write("Mảng là : " + "<br>")
+    for (let i = 0; i < arr2d.length; i++) {
+        arr2d[i] = Array(col);
+        for (let j = 0; j < arr2d[i].length; j++) {
+            element = parseInt(prompt("Nhập giá trị phần tử : [" + i + "][" + j + "] :"));
+            arr2d[i][j] = element;
+            document.write(arr2d[i][j] + "  ")
+        }
+        document.write("<br>");
+    }
+    let max = arr2d[0][0];
+
+    for (let i = 0; i < arr2d.length; i++) {
+        for (let j = 0; j < arr2d[i].length; j++) {
+            if (arr2d[i][j] > max) {
+                max = arr2d[i][j];
+            }
+
+        }
+    }
+    let min = arr2d[0][0];
+    for (let i = 0; i < arr2d.length; i++) {
+        for (let j = 0; j < arr2d[i].length; j++) {
+            if (arr2d[i][j] < min) {
+                min = arr2d[i][j]
+            }
+        }
+    }
+    document.write("Số lớn nhất trong mảng là : " + max + "<br>" + "Số nhỏ nhất trong mảng là : " + min)
+</script>
+</body>
+</html>

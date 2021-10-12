@@ -3,36 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>CaseStudy-Yêu cầu 3-Bài 5</title>
+    <style>
+        button {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .a {
+            width: 350px;
+            height: 600px;
+            background-color: aqua;
+            padding-left: 50px;
+            padding-top: 30px;
+        }
+    </style>
 </head>
 <body>
-<form>
-    <h3>MENU</h3>
-    <ol>
-        <li>Cafe : 20.000vnd</li>
-        <li>Cam vắt : 25.000vnd</li>
-        <li>Nước ép cà rốt : 20.000vnd</li>
-        <li>Nước ép cà chua : 20.000vnd</li>
-        <li>Nước lọc : 10.000vnd</li>
-        <li>Nước dừa : 35.000vnd</li>
-        <li>Thoát gọi món</li>
-    </ol>
+<div class="a">
+    <table border="1px">
+        <h3 style="padding-left: 110px">MENU</h3>
+        <tr>
+            <td>
+                <button onclick="cal(0)">Cafe</button>
+            </td>
+            <td>
+                <button onclick="cal(1)">Cam vắt</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="cal(2)">Nước ép cà rốt</button>
+            </td>
+            <td>
+                <button onclick="cal(3)">Nước ép cà chua</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="cal(4)">Nước lọc</button>
+            </td>
+            <td>
+                <button onclick="cal(5)">Nước dừa</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="total()">Tổng tiền</button>
+            </td>
 
-</form>
+        </tr>
+    </table>
+    <h3 id="result">Kết quả : </h3>
+    <h3 id="total">Tổng tiền</h3>
+</div>
 <script>
-    let value
-    do {
-        value = parseInt(prompt("Nhập số lượng đồ uống cần mua"));
-    } while (value > 7)
-    let arr = Array(value);
-    let a = [1, 2, 3, 4, 5, 6];
-    let b = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
-    let c = ["20.000vnd", "25.000vnd", "20.000vnd", "20.000vnd", "10.000vnd", "35.000vnd"];
-    for (let i = 0; i < arr.length; i++) {
-        arr[i] = parseInt(prompt("Đồ uống [" + (i + 1) + "]= "));
-        if (a[i] === arr[i]) {
-            arr[i] = b[i];
-            alert(arr);
-        }
+    let a = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    let b = [20000, 25000, 20000, 20000, 10000, 35000];
+    let quantity = " "
+    let sumMoney = 0;
+    let count1 = 1;
+    let count2 = 0
+    let result = " "
+
+    function cal(input) {
+        do {
+            quantity = prompt('Mời bạn nhập số lượng đồ uống ' + a[input]
+                + '\nVới mệnh giá ' + b[input] + 'VNĐ/ly')
+        } while (quantity < 0 || quantity !== quantity.toUpperCase() || quantity !== quantity.toLowerCase())
+
+        sumMoney += b[input] * quantity;
+        result += "\n" + count1 + " " + a[input] + " (số lượng : " + quantity + ")" + " : " + b[input] * quantity + "vnđ"
+        count1++;
+        count2++;
+        document.getElementById("result").innerText = "Kết quả : " + result
+    }
+
+    function total() {
+        document.getElementById("total").innerText = "Tổng tiền " + count2 + " món : " + sumMoney + "vnđ" + "\n" + "\nCảm ơn quý khách !!!"
     }
 </script>
 </body>
